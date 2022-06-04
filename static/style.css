@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu:wght@300&display=swap');
+
+
+#navbar{
+    height: 8vh;
+    width: 95vw;
+    margin: auto;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -6vh;
+}
+.form-group{
+    text-align: center;
+    /* background-color: aqua; */
+    color:black;
+    font-size: 3.8rem;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin-top: 1.77vh;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+    
+}
+#contact-box form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+input{
+    width: 40%;
+    /* padding: 0.5rem; */
+    border-radius: 9px;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.7rem;
+    /* color: rgb(107 164 230); */
+} 
+
+#navbar h1 {
+    margin-left: 2vw;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#navbar ul li a {
+    padding: 1vh 2vw;
+    text-decoration: none;
+    /* list-style: none; */
+    margin: 0 1vw;
+    color: white;
+    width: 4vw;
+    height: 7vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #508ce1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 12vh;
+    width: 100%;
+    /* margin: 1vh 1.5vw; */
+    z-index: -1;
+}
+#navbar ul li a:hover {
+    cursor: pointer;
+    background: #013e95; 
+    border-radius: 4px;
+}
+section::before {
+    content: "";
+    background-color: #2e72d2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 148%;
+    width: 100%;
+    /* margin: 1vh 1.5vw; */
+    margin-top: 12vh;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+#othsec::before {
+    content: "";
+    background-color: #2e72d2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    /* margin: 1vh 1.5vw; */
+    margin-top: 12vh;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+section h1{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+section p{
+    color: white;
+    font-size: 2rem;
+    margin: 5vh 17vw;
+    /* text-align: center; */
+}
+section ul li{
+    color: white;
+    font-size: 2rem;
+    margin: 2vh 17vw;
+    /* text-align: center; */
+    list-style: none;
+
+}
+section ul li a{
+    color: white;
+    font-size: 2rem;
+    /* margin: 2vh 17vw; */
+    /* text-align: center; */
+    /* list-style: none; */
+    text-decoration: none;
+
+}
+.Img{
+    width: 40vw;
+    margin: 2vh 5vw;
+    /* position: absolute; */
+    /* display: inline-block; */
+}
+#sgsec::before{
+    content: "";
+    background-color: #2e72d2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 178%;
+    width: 100%;
+    /* margin: 1vh 1.5vw; */
+    margin-top: 12vh;
+    z-index: -1;
+
+}
+#bbcsec::before{
+    content: "";
+    background-color: #2e72d2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 250%;
+    width: 100%;
+    /* margin: 1vh 1.5vw; */
+    margin-top: 12vh;
+    z-index: -1;
+
+}
+.container{
+    width: 48vw;
+    float: left;
+   
+}
+@media only screen and (max-width:1092px) {
+    #navbar ul{
+        flex-direction: column;
+    }
+    #navbar ul li{
+        text-align: center;
+        margin-top: 2vh;
+    }
+    #navbar::before{
+        height: 24vh;
+        /* position:relative; */
+        /* display: block; */
+    }
+    #navbar h1{
+        font-size: 1.15rem;
+        text-align: center;
+        margin-bottom: 7vh;
+    }
+    section::before,#othsec::before{
+        margin-top: 24vh;
+    }
+    section h1 {
+        margin-top: 23vh;
+        font-size: 1rem;
+    }
+    section p{
+        font-size: 0.75rem;
+        margin: 5vh 0vw;
+        text-align: center;
+    }
+    section ul li {
+        font-size: 0.75rem;
+        margin: 2vh 0vw;
+        text-align: center;
+
+    }
+    section p ul li a{
+        font-size: 0.75rem;
+        margin: 2vh 0vw;
+        text-align: center;
+
+    }
+    #othsec p{
+        margin-top: 23vh;
+    }
+    .f-075{
+        font-size: 0.50rem;
+    }
+}
