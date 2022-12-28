@@ -1,24 +1,12 @@
 # from crypt import methods
 # import email
 
-from ipaddress import IPv4Address
+# from ipaddress import IPv4Address
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 # from flask import session
-import json
+# import json
 app = Flask(__name__)
-# app.secret_key = 'super-secret-key'
-with open('config.json', 'r') as c:
-    params = json.load(c)["params"]
-
-local_server= True
-
-if(local_server):
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['local_uri']
-else:
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['prod_uri']
-
-db = SQLAlchemy(app)
 Id="SROS4M" 
 
 
@@ -82,11 +70,11 @@ def ss():
 def sss():
     return render_template('sss.html')
     
-IPv4 =  IPv4Address
 
 
 
 
 
 
-app.run(debug=True , host= IPv4)
+
+app.run(debug=True , host= '0.0.0.0')
